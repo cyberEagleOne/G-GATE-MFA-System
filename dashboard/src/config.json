@@ -1,0 +1,21 @@
+{
+  "mqtt": {
+    "websocketUrl": "ws://localhost:9001",
+    "tcpHost": "localhost",
+    "tcpPort": 1883,
+    "topics": {
+      "gateStatus": "ggate/unitA/status",
+      "carStatus": "ggate/unitA/car_status",
+      "gateCommand": "ggate/unitA/command",
+      "unitGps": "ggate/unitB/gps",
+      "unitGeofenceStatus": "ggate/unitB/status"
+    }
+  },
+  "gate": {
+    "name": "MAIN GATE",
+    "areaLabel": "Gading Serpong Sector 7",
+    "lat": -6.259955,
+    "lng": 106.618164,
+    "geofenceRadiusMeters": 20
+  }
+}

@@ -1,0 +1,12 @@
+services:
+  mosquitto:
+    image: eclipse-mosquitto
+    container_name: ggate-mosquitto
+    volumes:
+      - ./config:/mosquitto/config
+      - ./data:/mosquitto/data
+      - ./log:/mosquitto/log
+    ports:
+      - "1883:1883"
+      - "127.0.0.1:9001:9001"
+    restart: always
